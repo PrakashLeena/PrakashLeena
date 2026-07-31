@@ -66,10 +66,9 @@ My showcase website with project listings and contact information.
 ---
 
 ## Contact & Links
-- Website: https://your-website.example
-- Email: your.email@example.com
-- Twitter: [@yourhandle](https://twitter.com/yourhandle)
-- LinkedIn: https://www.linkedin.com/in/yourprofile
+- Website: https://kiboxson.vercel.app
+- Email: kiboxsonleena2004@gmail.com
+- LinkedIn: https://www.linkedin.com/in/kiboxson-leena5111
 
 ---
 
