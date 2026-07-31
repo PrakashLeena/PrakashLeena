@@ -16,17 +16,19 @@
 ## Featured Work (AI & ML focus)
 Below are highlights you can showcase — click to explore the repo or demo.
 
-### 🤖 AI-Buildathon — Portal for AI Buildathon
+### 🤖 Kapu - a Kapruka shopping agent
+A full-screen chat shopping experience built on the Kapruka MCP. The short version of how it works: Claude does the reasoning (figuring out what someone actually needs from a situation, not just a search term) and calls Kapruka's tools directly through Anthropic's native MCP connector - there's no hand-written tool-calling glue code in this project at all.  
+[Kapruka](https://github.com/PrakashLeena/Kapruka)
+
+
+### 🌐 AI-Buildathon — Portal for AI Buildathon
 An interactive portal and resources for the AI Buildathon — demos, submission guides, and event materials.  
-[Repo](https://github.com/PrakashLeena/AI-Buildathon)
+[AI-Buildathon](https://github.com/PrakashLeena/AI-Buildathon)
 
-### ⚙️ skills-integrate-mcp-with-copilot — Model Context Protocol Exercise
-Exercise demonstrating integration of Model Context Protocol with GitHub Copilot and related tooling.  
-[Repo](https://github.com/PrakashLeena/skills-integrate-mcp-with-copilot)
 
-### 🌐 portfolio — Personal portfolio website
-My showcase website with project listings and contact information.  
-[Repo](https://github.com/PrakashLeena/portfolio)
+### 🌐 SAEDS is a full-stack community website for the Student Association for Environmental Development.
+It provides a public-facing platform for members, activities, achievements, gallery updates, and an e-library experience backed by a Node/Express API.  
+[SAEDS](https://github.com/PrakashLeena/SAEDS)
 
 (If you want different projects featured or alternate descriptions, tell me which repos to swap in.)
 
