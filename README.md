@@ -58,10 +58,20 @@ It provides a public-facing platform for members, activities, achievements, gall
 
 ---
 
-## GitHub Stats
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=PrakashLeena&layout=compact&theme=radical)
-![Stats](https://github-readme-stats.vercel.app/api?username=PrakashLeena&show_icons=true&theme=radical)
-
+@@
+ ## GitHub Stats
+ ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=PrakashLeena&layout=compact&theme=radical)
+ ![Stats](https://github-readme-stats.vercel.app/api?username=PrakashLeena&show_icons=true&theme=radical)
+ 
++<!-- Additional GitHub stats cards -->
++
++![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=PrakashLeena&theme=radical)
++
++![Activity Graph](https://activity-graph.herokuapp.com/graph?username=PrakashLeena&theme=react-dark&area=true)
++
++![Trophy](https://github-profile-trophy.vercel.app/?username=PrakashLeena&theme=radical)
++
+@@
 ---
 
 ## Roadmap — My ML Focus
