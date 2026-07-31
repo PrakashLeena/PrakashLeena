@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
   <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0" stop-color="#FF5F6D"/>
-      <stop offset="0.5" stop-color="#FFC371"/>
-      <stop offset="1" stop-color="#9CECFB"/>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5F6D"/>
+      <stop offset="50%" stop-color="#FFC371"/>
+      <stop offset="100%" stop-color="#9CECFB"/>
     </linearGradient>
     <filter id="f" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="30" result="blur"/>
@@ -18,14 +18,14 @@
   </g>
   <g transform="translate(60,40)">
     <text x="0" y="70" font-family="Inter, Arial, sans-serif" font-size="56" fill="#071022" font-weight="700">Prakash Leena</text>
-    <text x="0" y="110" font-family="Inter, Arial, sans-serif" font-size="20" fill="#071022" opacity="0.9">AI & Machine Learning enthusiast · creative demos & model tooling</text>
+    <text x="0" y="110" font-family="Inter, Arial, sans-serif" font-size="20" fill="#071022" opacity="0.9">AI &amp; Machine Learning enthusiast · creative demos &amp; model tooling</text>
     <!-- subtle ML motif: connected nodes -->
     <g transform="translate(700,30)" fill="#071022" opacity="0.12">
       <circle cx="40" cy="40" r="18"/>
       <circle cx="90" cy="20" r="10"/>
       <circle cx="120" cy="60" r="14"/>
-      <line x1="40" y1="40" x2="90" y2="20" stroke="#071022" stroke-width="6" stroke-linecap="round" stroke-opacity="0.12"/>
-      <line x1="90" y1="20" x2="120" y2="60" stroke="#071022" stroke-width="6" stroke-linecap="round" stroke-opacity="0.12"/>
+      <line x1="40" y1="40" x2="90" y2="20" stroke="#071022" stroke-width="6" stroke-linecap="round"/>
+      <line x1="90" y1="20" x2="120" y2="60" stroke="#071022" stroke-width="6" stroke-linecap="round"/>
     </g>
   </g>
 </svg>

@@ -1,6 +1,10 @@
 # Hi, I’m Prakash 👋
 
-<img src="assets/banner.svg" alt="Banner" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner.svg" />
+  <img src="assets/banner.svg" alt="Banner" width="100%" />
+</picture>
 
 <div align="center">
   <img src="assets/avatar.svg" width="120" style="border-radius:50%" alt="avatar"/>
