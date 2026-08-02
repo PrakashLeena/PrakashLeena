@@ -1,29 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
   <defs>
     <linearGradient id="gd" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0F172A"/>
-      <stop offset="50%" stop-color="#0B3A52"/>
-      <stop offset="100%" stop-color="#05293A"/>
+      <stop offset="0%" stop-color="#0F172A">
+        <animate attributeName="stop-color" values="#0F172A;#0B3A52;#0F172A" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#0B3A52">
+        <animate attributeName="stop-color" values="#0B3A52;#05293A;#0B3A52" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#05293A">
+        <animate attributeName="stop-color" values="#05293A;#0F172A;#05293A" dur="8s" repeatCount="indefinite"/>
+      </stop>
     </linearGradient>
     <filter id="f" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="20" result="blur"/>
       <feBlend in="SourceGraphic" in2="blur"/>
     </filter>
+    <style>
+      .fade-in { opacity: 0; animation: fadeUp 1.2s ease-out forwards; }
+      .fade-in.delay { animation-delay: 0.5s; }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(14px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .float-a { animation: floatY 6s ease-in-out infinite; }
+      .float-b { animation: floatY 7s ease-in-out infinite reverse; }
+      .float-c { animation: floatY 9s ease-in-out infinite; }
+      @keyframes floatY {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-16px); }
+      }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      .pulse.p2 { animation-delay: 0.6s; }
+      .pulse.p3 { animation-delay: 1.2s; }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.25); }
+      }
+    </style>
   </defs>
   <rect width="1200" height="300" fill="url(#gd)"/>
   <g opacity="0.14" fill="#fff" filter="url(#f)">
-    <circle cx="160" cy="80" r="120"/>
-    <circle cx="420" cy="220" r="90"/>
-    <circle cx="920" cy="90" r="160"/>
+    <circle class="float-a" cx="160" cy="80" r="120"/>
+    <circle class="float-b" cx="420" cy="220" r="90"/>
+    <circle class="float-c" cx="920" cy="90" r="160"/>
   </g>
   <g transform="translate(60,40)">
-    <text x="0" y="70" font-family="Inter, Arial, sans-serif" font-size="56" fill="#E6EEF3" font-weight="700">Prakash Leena</text>
-    <text x="0" y="110" font-family="Inter, Arial, sans-serif" font-size="20" fill="#E6EEF3" opacity="0.9">AI &amp; Machine Learning enthusiast · creative demos &amp; model tooling</text>
+    <text class="fade-in" x="0" y="70" font-family="Inter, Arial, sans-serif" font-size="56" fill="#E6EEF3" font-weight="700">Kiboxson Lenai</text>
+    <text class="fade-in delay" x="0" y="110" font-family="Inter, Arial, sans-serif" font-size="20" fill="#E6EEF3" opacity="0.9">AI &amp; Machine Learning enthusiast · creative demos &amp; model tooling</text>
     <!-- subtle ML motif: connected nodes -->
     <g transform="translate(700,30)" fill="#E6EEF3" opacity="0.18">
-      <circle cx="40" cy="40" r="18"/>
-      <circle cx="90" cy="20" r="10"/>
-      <circle cx="120" cy="60" r="14"/>
+      <circle class="pulse" cx="40" cy="40" r="18"/>
+      <circle class="pulse p2" cx="90" cy="20" r="10"/>
+      <circle class="pulse p3" cx="120" cy="60" r="14"/>
       <line x1="40" y1="40" x2="90" y2="20" stroke="#E6EEF3" stroke-width="6" stroke-linecap="round"/>
       <line x1="90" y1="20" x2="120" y2="60" stroke="#E6EEF3" stroke-width="6" stroke-linecap="round"/>
     </g>
