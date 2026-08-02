@@ -1,13 +1,12 @@
-# Hi, I’m Prakash 👋
+# Hi, I’m Kiboxson 👋
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/banner.svg" />
   <img src="assets/banner.svg" alt="Banner" width="100%" />
 </picture>
 
 <div align="center">
-  <img src="assets/avatar.svg" width="120" style="border-radius:50%" alt="avatar"/>
   <h2>Prakash Leena — AI & Machine Learning Enthusiast · Creative Developer</h2>
   <p>Design-first dev building playful, production-ready ML demos and data-driven experiences.</p>
   <p>
@@ -22,17 +21,17 @@ Below are highlights you can showcase — click to explore the repo or demo.
 
 ### 🤖 Kapu - a Kapruka shopping agent
 A full-screen chat shopping experience built on the Kapruka MCP. The short version of how it works: Claude does the reasoning (figuring out what someone actually needs from a situation, not just a search term) and calls Kapruka's tools directly through Anthropic's native MCP connector - there's no hand-written tool-calling glue code in this project at all.  
-[Kapruka](https://github.com/PrakashLeena/Kapruka)
+[Kapruka](https://kaprukaai.tech)
 
 
 ### 🌐 AI-Buildathon — Portal for AI Buildathon
 An interactive portal and resources for the AI Buildathon — demos, submission guides, and event materials.  
-[AI-Buildathon](https://github.com/PrakashLeena/AI-Buildathon)
+[AI-Buildathon](https://aibuildathon.imssa.lk)
 
 
 ### 🌐 SAEDS is a full-stack community website for the Student Association for Environmental Development.
 It provides a public-facing platform for members, activities, achievements, gallery updates, and an e-library experience backed by a Node/Express API.  
-[SAEDS](https://github.com/PrakashLeena/SAEDS)
+[SAEDS](https://saeds.vercel.app)
 
 (If you want different projects featured or alternate descriptions, tell me which repos to swap in.)
 
@@ -58,10 +57,11 @@ It provides a public-facing platform for members, activities, achievements, gall
 
 ---
 
-## GitHub Stats
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=PrakashLeena&layout=compact&theme=radical)
-![Stats](https://github-readme-stats.vercel.app/api?username=PrakashLeena&show_icons=true&theme=radical)
-
+@@
+ ## GitHub Stats
+ ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=PrakashLeena&layout=compact&theme=radical)
+ ![Stats](https://github-readme-stats.vercel.app/api?username=PrakashLeena&show_icons=true&theme=radical)
+ 
 ---
 
 ## Roadmap — My ML Focus
