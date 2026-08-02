@@ -1,7 +1,7 @@
 # Hi, I’m Prakash 👋
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/banner.svg" />
   <img src="assets/banner.svg" alt="Banner" width="100%" />
 </picture>
