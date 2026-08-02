@@ -36,6 +36,32 @@
         0%, 100% { transform: scale(1); }
         50% { transform: scale(1.25); }
       }
+      .bob { animation: bob 0.5s ease-in-out infinite; }
+      @keyframes bob {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-5px); }
+      }
+      .track-dash { animation: dashMove 1s linear infinite; }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -64; }
+      }
+      .speed line { animation: speedFlicker 0.8s ease-in-out infinite; }
+      .speed line:nth-child(2) { animation-delay: 0.2s; }
+      .speed line:nth-child(3) { animation-delay: 0.4s; }
+      @keyframes speedFlicker {
+        0%, 100% { opacity: 0.15; }
+        50% { opacity: 0.5; }
+      }
+      .glow { animation: glow 1.6s ease-in-out infinite; }
+      @keyframes glow {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 0.9; }
+      }
+      .nod { animation: nod 3s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      @keyframes nod {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(5deg); }
+      }
     </style>
   </defs>
   <rect width="1200" height="300" fill="url(#g)"/>
@@ -54,6 +80,58 @@
       <circle class="pulse p3" cx="120" cy="60" r="14"/>
       <line x1="40" y1="40" x2="90" y2="20" stroke="#071022" stroke-width="6" stroke-linecap="round"/>
       <line x1="90" y1="20" x2="120" y2="60" stroke="#071022" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+  <!-- cartoon runner on a track (bottom-left corner) -->
+  <g transform="translate(30,200)">
+    <line x1="-10" y1="84" x2="180" y2="84" stroke="#071022" stroke-width="4" stroke-linecap="round" opacity="0.35"/>
+    <line class="track-dash" x1="-10" y1="84" x2="180" y2="84" stroke="#fff" stroke-width="2.5" stroke-dasharray="14 18" opacity="0.85"/>
+    <g class="speed" stroke="#071022" stroke-width="4" stroke-linecap="round">
+      <line x1="6" y1="30" x2="34" y2="30"/>
+      <line x1="0" y1="44" x2="30" y2="44"/>
+      <line x1="8" y1="58" x2="34" y2="58"/>
+    </g>
+    <g class="bob">
+      <!-- back arm -->
+      <path d="M80 34 L66 44 L72 54" stroke="#FFB37B" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- back leg (trailing) -->
+      <path d="M74 56 L56 68 L42 62" stroke="#071022" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- torso (leaning forward) -->
+      <path d="M86 30 L74 56" stroke="#EF4444" stroke-width="11" stroke-linecap="round"/>
+      <!-- front leg (striding) -->
+      <path d="M74 56 L94 64 L100 80" stroke="#071022" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- shoes -->
+      <ellipse cx="103" cy="81" rx="7" ry="4" fill="#fff"/>
+      <ellipse cx="40" cy="61" rx="7" ry="4" fill="#fff"/>
+      <!-- front arm -->
+      <path d="M86 34 L100 42 L112 34" stroke="#FFB37B" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- head + hair -->
+      <circle cx="92" cy="18" r="11" fill="#FFB37B"/>
+      <path d="M82 14 A11 11 0 0 1 100 10 L96 16 Z" fill="#3B2F2F"/>
+    </g>
+  </g>
+  <!-- cartoon boy coding on a rock (bottom-right corner) -->
+  <g transform="translate(1020,195)">
+    <!-- rock -->
+    <path d="M18 92 Q6 60 42 54 Q56 40 84 48 Q116 44 122 68 Q138 92 112 92 Z" fill="#6B7280"/>
+    <path d="M30 70 Q42 56 66 58 Q60 74 44 78 Z" fill="#9CA3AF" opacity="0.7"/>
+    <g class="nod">
+      <!-- legs bent in front (facing left) -->
+      <path d="M76 48 L48 52 L46 72" stroke="#1F2937" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- shoe -->
+      <ellipse cx="44" cy="74" rx="7" ry="4" fill="#fff"/>
+      <!-- torso -->
+      <path d="M72 20 L76 48" stroke="#10B981" stroke-width="11" stroke-linecap="round"/>
+      <!-- laptop base on lap -->
+      <path d="M40 46 L64 50 L62 54 L38 50 Z" fill="#374151"/>
+      <!-- laptop screen -->
+      <path d="M40 46 L34 24 L38 22 L45 45 Z" fill="#4B5563"/>
+      <polygon class="glow" points="36,26 41,43 44,42 39,25" fill="#9CECFB"/>
+      <!-- arms typing -->
+      <path d="M72 26 L56 38 L50 46" stroke="#FFB37B" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- head + hair (looking at screen) -->
+      <circle cx="68" cy="8" r="11" fill="#FFB37B"/>
+      <path d="M58 6 A11 11 0 0 1 76 -1 L70 6 Z" fill="#3B2F2F"/>
     </g>
   </g>
 </svg>
