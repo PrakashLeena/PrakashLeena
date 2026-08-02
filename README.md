@@ -1,4 +1,4 @@
-# Hi, I’m Prakash 👋
+# Hi, I’m Kiboxson 👋
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg" />
