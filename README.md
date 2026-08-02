@@ -7,7 +7,6 @@
 </picture>
 
 <div align="center">
-  <img src="assets/avatar.svg" width="120" style="border-radius:50%" alt="avatar"/>
   <h2>Prakash Leena — AI & Machine Learning Enthusiast · Creative Developer</h2>
   <p>Design-first dev building playful, production-ready ML demos and data-driven experiences.</p>
   <p>
