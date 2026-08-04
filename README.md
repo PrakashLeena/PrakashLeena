@@ -7,7 +7,7 @@
 </picture>
 
 <div align="center">
-  <h2>Prakash Leena — AI & Machine Learning Enthusiast · Creative Developer</h2>
+  <h2>Kiboxson Lenai — AI & Machine Learning Enthusiast · Creative Developer</h2>
   <p>Design-first dev building playful, production-ready ML demos and data-driven experiences.</p>
   <p>
     🔭 Currently: shifting focus to ML systems & interactive model demos • 🌱 Learning: production ML workflows, WebGL visualizations • ⚡ Fun: turning datasets into playful interfaces
